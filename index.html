@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--FONTAWESOME-->
     <script src="https://kit.fontawesome.com/7533af764e.js" crossorigin="anonymous"></script>
+    <!--STYLE SHEET-->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-----------------------------NAVBAR----------------------------->
@@ -19,21 +21,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto font-weight-bold col-7">
-                    <li class="nav-item mr-3 active">
-                        <a href="" class="nav-link">HOME <span class="sr-only"></span></a>
+                <ul class="navbar-nav ml-auto col-7" id="nav-list">
+                    <li class="nav-item mr-3 active" id="active-nav">
+                        <a href="index.html" class="nav-link" id="nav-item">HOME <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a href="" class="nav-item nav-link">ABOUT</a>
+                        <a href="" class="nav-item nav-link" id="nav-item">ABOUT</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a href="" class="nav-item nav-link">RECIPES</a>
+                        <a href="" class="nav-item nav-link" id="nav-item">RECIPES</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a href="" class="nav-item nav-link">START HERE</a>
+                        <a href="" class="nav-item nav-link" id="nav-item">START HERE</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-item nav-link"><i class="fas fa-search"></i></a>
+                        <a href="" class="nav-item nav-link" id="nav-search"><i class="fas fa-search"></i></a>
                     </li>
             </div>
         </div>
@@ -44,46 +46,40 @@
         <div class="row">
             <div class="col-9"><img src="imgs/hero-top.png" width="220px"></div>
 
-            <div class="col-3 mt-4">Or skip straight to the blog <i class="far fa-arrow-alt-circle-right"></i></div>
+            <div class="col-3 mt-4 text-right" id="hero-skip">Or skip straight to the blog <i class="far fa-arrow-alt-circle-right"></i></div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="hero-imgs">
         <div class="row">
-            <a class="col-lg-4" href="#">
-                <img src="imgs/hero-img-1.webp" width="373px">
-                <p class="text-center font-weight-bold">VEGETARIAN</p>
-                <p class="text-center font-weight-bold">Creamy Mushroom Soup</p>
+            <a class="col-lg-4" href="#" id="hero-img">
+                <img src="imgs/hero-img-1.png" width="373px">
+                <p class="text-center font-weight-bold" id="hero-txt">Creamy Mushroom Soup</p>
             </a>
 
-            <a class="col-lg-4" href="#">
-                <img src="imgs/hero-img-2.jpeg" width="373px">
-                <p class="text-center font-weight-bold">HEALTHY</p>
-                <p class="text-center font-weight-bold">Spicy Shrimp with Cauliflower Mash and Garlic Kale</p>
+            <a class="col-lg-4" href="#" id="hero-img">
+                <img src="imgs/hero-img-2.png" width="374px">
+                <p class="text-center font-weight-bold" id="hero-txt">Spicy Shrimp with Cauliflower Mash and Garlic Kale</p>
             </a>
 
-            <a class="col-lg-4" href="">
+            <a class="col-lg-4" href="" id="hero-img">
                 <img src="imgs/hero-img-3.jpeg" width="373px">
-                <p class="text-center font-weight-bold">RECIPES</p>
-                <p class="text-center font-weight-bold">Easy Veggie Enchiladas</p>
+                <p class="text-center font-weight-bold" id="hero-txt">Easy Veggie Enchiladas</p>
             </a>
         </div>
     </div>
 
     <!-----------------------------RECIPE SEARCH----------------------------->
-    <div class="jumbotron pt-4 pb-3 mt-3">
+    <div class="jumbotron pt-4 pb-3 mt-3" id="recipe-search-container">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-6">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-search"></i></span>
-                        </div>
-                        <input type="text" class="form-control" placeholder='Search our recipes'>
+                    <div>
+                        <span><i class="fas fa-search" id="recipe-search-icon"></i><input type="text" placeholder='Search our recipes' id="recipe-search-input"></span>
                     </div>
                 </div>
 
-                <div class="col-5 pr-3">
+                <div class="col-5 pr-3" id="recipe-search-right">
                     <div class="row align-items-center justify-content-center">
                         <div class="px-2">
                             <img src="imgs/recipes-trophy.png" width="50px" class="img-fluid mx-auto d-block">
@@ -148,10 +144,10 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-4 text-center bg-light">
-                <p>HI! I'M LINDSAY.</p>
-                <p>nice to meet you!</p>
-                <p>I’m a former 4th grade teacher, <br>now full time blogger. My <br>husband Bjork and I live in <br>Minnesota. Favorite things <br>include my camera, lake days, and <br>dark chocolate.</p>
-                <button class="btn ">LEARN MORE</button>
+                <p id="about-me-name">HI! I'M LINDSAY.</p>
+                <img src="imgs/about-me-meet.png" width="220px" id="about-me-meet">
+                <p id="about-me-txt">I’m a former 4th grade teacher, <br>now full time blogger. My <br>husband Bjork and I live in <br>Minnesota. Favorite things <br>include my camera, lake days, and <br>dark chocolate.</p>
+                <button id="about-me-btn">LEARN MORE</button>
             </div>
 
             <div class="col-4">
@@ -164,17 +160,17 @@
         </div>
     </div>
     <!-----------------------------EMAIL SIGN UP----------------------------->
-    <div class="jumbotron">
+    <div class="jumbotron" id="email-sign-up">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-4">
-                    <div>FOLLOW US <img src="imgs/followus.png" width="230px"></div>
+                    <div id="email-sign-up-txt">FOLLOW US <img src="imgs/followus.png" width="230px"></div>
                 </div>
                 <div class="col-2">
 
                 </div>
                 <div class="col-6">
-                    <div class="text-center"><img src="imgs/sign up.png" width="96px" class="img-fluid">FOR EMAIL UPDATES</div>
+                    <div class="text-center" id="email-sign-up-txt"><img src="imgs/sign up.png" width="96px" class="img-fluid">FOR EMAIL UPDATES</div>
                     <form>
                         <div class="form-row">
                             <div class="col">
@@ -184,7 +180,7 @@
                             <div class="col">
                                 <input type="text" class="form-control" placeholder="Email">
                             </div>
-                            <button type="submit" class="btn btn-primary">GO</button>
+                            <button type="submit" id="email-sign-up-btn">GO</button>
                         </div>
                     </form>
                 </div>
@@ -195,16 +191,16 @@
     <div class="container">
         <div class="row border-bottom">
             <div class="col-8">
-                <p>THE LATEST AND GREATEST</p>
+                <p id="latest-and-greatest-title">THE LATEST AND GREATEST</p>
                 <div class="row border-bottom my-4">
                     <div class="col-4">
                         <img src="imgs/latestandgreatest1.png" class="img-fluid mb-4">
                     </div>
                     <div class="col-8">
-                        <p>OCTOBER 20, 2021</p>
-                        <h3 class="my-3">Chicken Tortilla Soup</h3>
-                        <p>Winner, winner, Chicken Tortilla Soup dinner! Tender chicken thighs, creamy pinto beans, garlic and onions, crushed tomatoes, jalapeño pepper, crushed tomatoes, and ALL the toppings.</p>
-                        <p>CONTINUE READING</p>
+                        <p id="lag-date">OCTOBER 20, 2021</p>
+                        <h3 class="my-3" id="lag-recipe">Chicken Tortilla Soup</h3>
+                        <p id="lag-info">Winner, winner, Chicken Tortilla Soup dinner! Tender chicken thighs, creamy pinto beans, garlic and onions, crushed tomatoes, jalapeño pepper, crushed tomatoes, and ALL the toppings.</p>
+                        <p id="lag-continue">CONTINUE READING</p>
                     </div>
                 </div>
 
@@ -213,10 +209,10 @@
                         <img src="imgs/latestandgreatest2.png" class="img-fluid mb-4">
                     </div>
                     <div class="col-8">
-                        <p>OCTOBER 18, 2021</p>
-                        <h3 class="my-3">Pumpkin Soup with Walnut Crispies</h3>
-                        <p>It’s lush, it’s beautiful, it’s creamy Pumpkin Soup with Walnut Crispies! Made with a whole roasted pumpkin, garlic, cream, speckles of fresh herbs, and topped with the best sweet/savory walnut crispies.</p>
-                        <p>CONTINUE READING</p>
+                        <p id="lag-date">OCTOBER 18, 2021</p>
+                        <h3 class="my-3" id="lag-recipe">Pumpkin Soup with Walnut Crispies</h3>
+                        <p id="lag-info">It’s lush, it’s beautiful, it’s creamy Pumpkin Soup with Walnut Crispies! Made with a whole roasted pumpkin, garlic, cream, speckles of fresh herbs, and topped with the best sweet/savory walnut crispies.</p>
+                        <p id="lag-continue">CONTINUE READING</p>
                     </div>
                 </div>
 
@@ -225,10 +221,10 @@
                         <img src="imgs/latestandgreatest3.png" class="img-fluid">
                     </div>
                     <div class="col-8">
-                        <p>OCTOBER 15, 2021</p>
-                        <h3 class="my-3">Healing Chicken and Rice Soup</h3>
-                        <p>Healing Chicken and Rice Soup that is limey, salty, and so fresh! Garlic-ginger-infused broth, shredded chicken thighs, tender jasmine rice, fresh herbs, and peanuts. YUM.</p>
-                        <p>CONTINUE READING</p>
+                        <p id="lag-date">OCTOBER 15, 2021</p>
+                        <h3 class="my-3" id="lag-recipe">Healing Chicken and Rice Soup</h3>
+                        <p id="lag-info">Healing Chicken and Rice Soup that is limey, salty, and so fresh! Garlic-ginger-infused broth, shredded chicken thighs, tender jasmine rice, fresh herbs, and peanuts. YUM.</p>
+                        <p id="lag-continue">CONTINUE READING</p>
                     </div>
                 </div>
             </div>
@@ -237,7 +233,7 @@
                 <img src="imgs/latestandgreatest-4.png" class="img-fluid">
 
                 <ol class="list-group">
-                    <li class="d-flex bg-light mt-3 mb-1 px-4 py-3">RECIPE COLLECTIONS</li>
+                    <li class="d-flex bg-light mt-3 mb-1 px-4 py-3" id="lag-recipe-collections">RECIPE COLLECTIONS</li>
                     <li class="d-flex justify-content-between align-items-center px-3 py-3 bg-light mb-1">
                         <div class="d-flex align-items-center "><img src="imgs/recipes-1.png" width="17px" class="mx-2">Instant Pot Recipes</div>
                         <span class="mr-3">43</span>
@@ -273,33 +269,34 @@
                 </ol>
             </div>
         </div>
-        <div class="text-center my-4">MORE FROM THE BLOG <i class="far fa-arrow-alt-circle-right"></i></div>
+        <div class="text-center my-4" id="lag-more">MORE FROM THE BLOG <i class="far fa-arrow-alt-circle-right"></i></div>
     </div>
     <!-----------------------------MORE RECIPES----------------------------->
     <div class="jumbotron bg-light">
+        <img src="imgs/more-recipes-top.png" width="600px" id="more-recipes-top">
         <div class="container">
             <div class="row">
                 <div class="col-3">
                     <img src="imgs/more-1.png" width="280px">
-                    <p class="text-center">Sopa Tarasca (Pinto Bean Soup) with Jalepeno Corn Fritters</p>
+                    <p class="text-center" id="more-recipes-title">Sopa Tarasca (Pinto Bean Soup) with Jalepeno Corn Fritters</p>
                 </div>
                 <div class="col-3">
                     <img src="imgs/more-2.png" width="280px">
-                    <p class="text-center">Peppery Torn Homemade Crutons</p>
+                    <p class="text-center" id="more-recipes-title">Peppery Torn Homemade Crutons</p>
                 </div>
                 <div class="col-3">
                     <img src="imgs/more-3.png" width="280px">
-                    <p class="text-center">Thai Coconut Soup with Tofu and Rice</p>
+                    <p class="text-center" id="more-recipes-title">Thai Coconut Soup with Tofu and Rice</p>
                 </div>
                 <div class="col-3">
                     <img src="imgs/more-4.png" width="280px">
-                    <p class="text-center">Creamy Mushroom Soup</p>
+                    <p class="text-center" id="more-recipes-title">Creamy Mushroom Soup</p>
                 </div>
             </div>
         </div>
     </div>
     <!-----------------------------COOKBOOK SIGN UP----------------------------->
-    <div class="jumbotron">
+    <div class="jumbotron" id="cookbook">
         <div class="container my-0">
             <div class="row">
                 <div class="col-1"></div>
@@ -309,9 +306,9 @@
 
                 <div class="col-1"></div>
                 <div class="col-5">
-                    <img src="imgs/ebook_get.png" width="150px" class="mx-auto d-block">
-                    <p class="text-center">PINCH OF YUM COOKBOOK</p>
-                    <p class="text-center">The eBook includes our most popular 25 recipes in a beautiful, easy to download format. Enter your email and we'll send it right over!</p>
+                    <img src="imgs/ebook_get.png" width="150px" class="mx-auto d-block" id="cookbook-get-now">
+                    <p class="text-center" id="cookbook-title">PINCH OF YUM COOKBOOK</p>
+                    <p class="text-center" id="cookbook-txt">The eBook includes our most popular 25 recipes in a beautiful, easy to download format. Enter your email and we'll send it right over!</p>
                     <form>
                         <div class="form-row">
                             <div class="col">
@@ -321,7 +318,7 @@
                             <div class="col">
                                 <input type="text" class="form-control" placeholder="Email">
                             </div>
-                            <button type="submit" class="btn btn-primary">GO</button>
+                            <button type="submit" id="cookbook-btn">GO</button>
                         </div>
                     </form>
                 </div>
@@ -332,8 +329,8 @@
     <!-----------------------------FOOTER----------------------------->
     <div class="container">
         <div class="row">
-            <div class="col-2">
-                <b>PINCH OF YUM</b>
+            <div class="col-2" id="footer-more-info">
+                <p><b>PINCH OF YUM</b></p>
                 <p>About</p>
                 <p>Blog</p>
                 <p>Recipe Index</p>
@@ -344,8 +341,8 @@
                 <p>Content</p>
             </div>
             <div class="col-1"></div>
-            <div class="col-2">
-                <b>FOOD AND RECIPES</b>
+            <div class="col-2" id="footer-more-info">
+                <p><b>FOOD AND RECIPES</b></p>
                 <p>Sugar Free January</p>
                 <p>Freezer Meals 101</p>
                 <p>Quick and Easy Recipes</p>
@@ -357,21 +354,23 @@
                 <p>Meal Prep Recipes</p>
             </div>
             <div class="col-1"></div>
-            <div class="col-6">
-                <p class="text-center">Sign Up for Email Updates</p>
-                <p class="text-center">Get a Free eCookbook with our top 25 recipes.</p>
-                <form>
-                    <div class="form-row">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
+            <div class="col-6" >
+                <div id="footer-sign-up">
+                    <p class="text-center" id="footer-sign-up-txt1">Sign Up for Email Updates</p>
+                    <p class="text-center" id="footer-sign-up-txt2">Get a Free eCookbook with our top 25 recipes.</p>
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First Name">
+                            </div>
 
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <button type="submit" id="footer-btn">GO</button>
                         </div>
-                        <button type="submit" class="btn btn-primary">GO</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
                 <img src="imgs/footer-2.png" class="img-fluid">
             </div>
         </div>
@@ -380,8 +379,8 @@
         </div>
     </div>
 
-    <p class="text-center">Privacy Policy      Terms</p>
-    <p class="text-center mb-5">Information from your device can be used to personalize your ad experience.<br>Do not sell my personal information.</p>
+    <p class="text-center" id="footer-policy">Privacy Policy      Terms</p>
+    <p class="text-center mb-5" id="footer-info">Information from your device can be used to personalize your ad experience.<br><u>Do not sell my personal information.</u></p>
     
 </body>
 </html>

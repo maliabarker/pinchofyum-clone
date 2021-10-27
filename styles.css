@@ -1,0 +1,261 @@
+@font-face {
+    font-family: HussarTani;
+    src: url(fonts/HussarTani.otf);
+}
+
+@font-face {
+    font-family: Passenger;
+    src: url(fonts/PassengerDisplay-Medium.ttf)
+}
+
+#nav-item {
+    font-family: HussarTani;
+    font-size: 1.65em;
+    color: rgb(41, 41, 41);
+}
+
+#active-nav > a{
+    border-bottom: solid #723e5b;
+    padding-bottom: 20px;
+}
+
+#nav-search {
+    font-size: 1.25em;
+    color: #723e5b;
+    position: relative;
+    top: 8px;
+}
+
+#hero-skip {
+    color: #606060;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+
+#hero-skip:hover {
+    cursor: pointer;
+    color: #723e5b;
+}
+
+#hero-txt {
+    font-family: Passenger;
+    color: black;
+    font-size: 1.8rem;
+    padding-top: 10px;
+}
+
+#hero-img:hover {
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+#recipe-search-container {
+    background-color: #723e5b;
+    padding-right: 20px;
+    color: white;
+}
+
+#recipe-search-input{
+    width: 590px;
+    height: 50px;
+    padding-left: 50px;
+    position: relative;
+    bottom: 15px;
+    right: 50px;
+    border-top: solid 5px #e4e4e4;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+#recipe-search-icon {
+    position: relative;
+    right: 30px;
+    top: 25px;
+    color:#723e5b;
+    z-index: 1;
+    font-size: 1rem;
+}
+
+#recipe-search-right {
+    font-family: HussarTani;
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+#about-me-name {
+    font-family: HussarTani;
+    font-size: 1.75rem;
+    padding-top: 50px;
+}
+
+#about-me-meet {
+    position: relative;
+    bottom: 20px;
+}
+
+#about-me-txt {
+    color: #606060;
+    line-height: 32px;
+}
+
+#about-me-btn {
+    background-color: #723e5b;
+    font-family: HussarTani;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#email-sign-up {
+    background-color: #4c4a4b;
+}
+
+#email-sign-up-txt {
+    font-family: HassarTani;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#email-sign-up-btn {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: #edb655;
+}
+
+#latest-and-greatest-title {
+    font-family: HassarTani;
+    color: #723e5b;
+    font-weight: bold;
+}
+
+#lag-date {
+    font-family: HassarTani;
+    color: #878787;
+}
+
+#lag-recipe {
+    font-family: Passenger;
+    font-weight: bold;
+}
+
+#lag-info {
+    color: #4c4a4b;
+    padding-bottom: 20px;
+}
+
+#lag-continue {
+    font-family: HassarTani;
+    color: #edb655;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#lag-recipe-collections {
+    color: #723e5b;
+    font-family: HassarTani;
+    font-weight: bold;
+}
+
+#lag-more{
+    font-family: HassarTani;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 60px;
+    color: #878787;
+}
+
+#more-recipes-top {
+    position: relative;
+    bottom: 82px;
+    left: 31%;
+}
+
+#more-recipes-title {
+    font-family: HassarTani;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+#cookbook {
+    background-color: #4c4a4b;
+}
+
+#cookbook-get-now {
+    padding-top: 20px;
+}
+
+#cookbook-title {
+    font-family: HassarTani;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+}
+
+#cookbook-txt {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 30px
+}
+
+#cookbook-btn {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: #edb655;
+}
+
+#footer-more-info {
+    font-family: HassarTani;
+    line-height: 15px;
+    color: #4c4a4b;
+}
+
+#footer-sign-up {
+    background-color: #723e5b;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+
+#footer-sign-up-txt1 {
+    color: white;
+    font-family: HassarTani;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 0;
+}
+
+#footer-sign-up-txt2 {
+    color: white;
+}
+
+#footer-btn {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: #edb655;
+}
+
+#footer-policy {
+    font-size: 0.8rem;
+    color: #555555;
+    padding-top: 40px;
+}
+
+#footer-info {
+    font-size: 0.8rem;
+    color: #9d9d9d;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
